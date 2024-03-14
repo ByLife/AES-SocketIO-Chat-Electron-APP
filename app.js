@@ -2,6 +2,7 @@ const { app, session ,BrowserWindow} = require('electron')
 const path = require('path')
 
 var App = app;
+// enable debugging
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -9,9 +10,10 @@ function createWindow () {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
   })
   win.setMenu(null)
+  win.webContents.openDevTools()
   win.loadFile('index.html')
 }
 

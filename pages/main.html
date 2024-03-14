@@ -17,26 +17,45 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./../src/styles/main.css">
+<link rel="stylesheet" href="./../src/styles/chat.css">
+
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <sectio class="nav">
-  <h1 class="title-bvn">DEVELOP YOUR CYBER SKILLS</h1>
-  <h3 class="span loader"><span class="m">💀</span><span class="m">&nbsp;</span><span class="m">W</span><span class="m">H</span><span class="m">I</span><span class="m">T</span><span class="m">E</span><span class="m">H</span><span class="m">A</span><span class="m">C</span><span class="m">K</span><span class="m">&nbsp;</span><span class="m">💀</span></h3>
-  <div class="nav-container"><a class="nav-tab" href="#sendmessage">QUESTION</a></div>
+  <h1>RUST PROJECT</h1>
+  <h3 class="span loader"><span class="m">💀</span><span class="m">&nbsp;</span><span class="m">L</span><span class="m">O</span><span class="m">C</span><span class="m">K</span><span class="m">B</span><span class="m">I</span><span class="m">T</span><span class="m">&nbsp;</span><span class="m">💀</span></h3>
 </sectio>
 <main class="main">
   <section class="slider" id="sendmessage">
-    <h1>📝 Philosophez ! ✍️</h1>
+    <h1>📝 Chat ! ✍️</h1>
     <h2 style="margin-bottom: 1.5em;"></h2>
-    <textarea class='autoExpand textarea-message' rows='3' data-min-rows='3' placeholder="Qu'est-ce que l'intelligence ?" autofocus></textarea>
     <div class="message-callback"></div>
+    <div>
+      <div id="responseContainer">
+      </div>
+      <div class="input-section">
+        <span id="nameText" class="name-text">Server > Welcome to the chat ! </span>
+        <br/>
+
+        <style> #message { border: 1px solid; border-radius: 2px; } </style>
+      </div>
+      <input id="message" autofocus="true" style="margin-top: 50px;">
+    </div>
 </div>
   </section>
 </main>
 <canvas class="background"></canvas>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/aes.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/md5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/enc-hex.min.js"></script>
+
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+
   <script  src="./../src/js/app.js"></script>
   <script src="./../src/js/main.js"></script>
 </body>

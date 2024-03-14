@@ -1,0 +1,40 @@
+:root {
+    --background: #202429;
+    --name: #92eb34;
+    --text: #13f239;
+    --text-error: #ff3d3d;
+  }
+  
+  * {
+    font-family: "Courier New", "Verdana";
+    color: var(--text);
+    font-size: 0.9rem;
+  }
+  
+  body {
+    background-color: var(--background);
+  }
+  
+  .response {
+    color: var(--text);
+  }
+  .error {
+    color: var(--text-error);
+  }
+  .timeStamp {
+    font-size: 0.7em;
+    opacity: 50%;
+  }
+  
+  #userInput {
+    background: none;
+    border: none;
+    outline: none;
+    width: 70%;
+    text-overflow: clip;
+  }
+  #nameText {
+    font-weight: bold;
+    color: var(--name);
+  }
+  
